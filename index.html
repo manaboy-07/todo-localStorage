@@ -1,0 +1,77 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="greeting">
+        <h2 class="title">
+          What's up, <input type="text" placeholder="name here" id="name" />
+        </h2>
+      </section>
+      <section class="create-todo">
+        <h3>Create a todo</h3>
+        <form id="todo-form">
+          <h4>Whats on your todo list</h4>
+          <input type="text" name="content" id="content" placeholder="e.g make a video" />
+
+          <h4>Pick a category</h4>
+          <div id="options" class="options">
+            <label>
+              <input type="radio" name="category" id="" value="business"/>
+              <span class="bubble business"></span>
+              <div>BUSINESS</div>
+            </label>
+
+            <label>
+              <input type="radio" name="category" id="" value="personal"/>
+              <span class="bubble personal"></span>
+              <div>PERSONAL</div>
+            </label>
+          </div>
+          <button type="submit">Add Todo</button>
+        </form>
+      </section>
+      <section class="todo-list">
+        <h3>Todo List</h3>
+        <div class="list" id="todo-list">
+          <!-- <div class="todo-item">
+            <label>
+              <input type="checkbox" name="" id="" />
+              <span class="bubble business"></span>
+            </label>
+            <div class="todo-content">
+              <input type="text" value="Make a video" readonly />
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div> -->
+
+          <!-- <div class="todo-item">
+            <label>
+              <input type="checkbox" name="" id="" />
+              <span class="bubble personal"></span>
+            </label>
+            <div class="todo-content">
+              <input type="text" value="get milk" readonly />
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
